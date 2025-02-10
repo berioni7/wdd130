@@ -160,3 +160,162 @@ h1, h2 {
         margin-top: 10px;
     }
 }
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centralizando o conteúdo */
+    padding: 20px;
+    background-color: #053d6e;
+    color: white;
+    font-size: 1rem;
+    text-align: center;  /* Centralizando o texto */
+}
+
+.footer .sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Espaço entre os social links e o próximo conteúdo */
+}
+
+.footer .sociallinks img {
+    width: 40px;
+    height: auto;
+}
+
+.footer .contact-info {
+    margin-bottom: 20px; /* Espaço entre o contato e o mapa */
+}
+
+.footer .contact-info p {
+    margin: 5px 0; /* Espaçamento entre as informações de contato */
+}
+
+.footer .map {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 20px; /* Espaço entre o mapa e o copyright */
+}
+
+.footer .copy {
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #053d6e;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #669bbc;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    background: url('https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting12_1024.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pictures img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .overlay {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-container {
+        padding: 5px;
+    }
+
+    .pictures img,
+    .section img {
+        width: 180px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sociallinks {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
