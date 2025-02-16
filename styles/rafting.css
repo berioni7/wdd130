@@ -170,7 +170,7 @@ body {
     margin-top: -110px;
 }
 
-.pictures {
+.pictures1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -379,7 +379,7 @@ body {
     justify-content: center;
 }
 
-.titulo {
+.titulo, .a {
     display: flex;
     justify-content: center;
     font-family: 'Alata', sans-serif;
@@ -524,7 +524,7 @@ body {
     font-family: 'Aoboshi One', sans-serif;
 }
 
-.wireframe-link {
+.wireframe-link, .wireframe {
     color: white;
     padding: 10px;
 }
@@ -540,6 +540,90 @@ body {
 
 .footer {
     z-index: 10;
-    position: relative;
-    
+    position: relative; 
+}
+
+.b {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0; 
+    box-shadow:6px 6px 10px rgba(0, 0, 0, 0.5) ;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3c5233;
+    color: whitesmoke;
+}
+
+td {
+    background-color: #a3b18a;
+}
+
+.rivers-pictures {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+    flex-wrap: wrap; 
+    margin-top: 50x;
+}
+
+.river-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    max-width: 300px; 
+    font-family: 'Aoboshi One', sans-serif;
+}
+
+.rivers-pictures img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border: 5px solid #606C38;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+}
+
+.c, .d {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.caneca {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    margin-top: -50px
+}
+
+.caneca-button {
+    background-color: var(--accent-color);
+    color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.caneca-button:hover {
+    transform: scale(1.1); 
+    background-color: #68b0ab; 
+    color: white; 
 }
